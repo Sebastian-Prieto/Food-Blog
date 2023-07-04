@@ -1,0 +1,16 @@
+{
+  "name": "food-blog",
+  "version": "1.0.0",
+  "description": "Welcome to my food blog! Here, you'll find a delightful collection of recipes, culinary adventures, and food stories that will tantalize your taste buds and inspire you to explore the world of gastronomy. From mouthwatering appetizers to decadent desserts, this blog is a treasure trove of culinary delights 🍕",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6",
+    "vite": "^4.3.9"
+  }
+}
