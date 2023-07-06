@@ -10,18 +10,23 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
 
+    <link rel="shortcut icon" href="src/images/logos/foogle.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="src/styles/main.scss">
     <title>Foogle</title>
 </head>
 <body>
     <header>
-        <img src="src/images/logos/foogle.svg" alt="Foogle's logo">
+        <section class="logo-section">
+            <img src="src/images/logos/foogle.svg" alt="Foogle's logo" width="50" height="50">
+            <h1>Foogle</h1>
+        </section>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
+            <ul class="nav-list">
+                <li><a href="#" class="active-element">Home</a></li>
                 <li><a href="#">Subscribe</a></li>
-                <li><button>Buy me a coffee</button></li>
-                <li><button>Discord</button></li>
+                <li><button class="btn-discord"> <i class="fa-brands fa-discord"></i></button></li>
+                <li><button class="btn-github"> <i class="fa-brands fa-github"></i> </button></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +48,28 @@
                 <input type="search" name="" id="" placeholder="Search...">
             </nav>
         </div>
-        <article></article>
+        <article class="post-list-card">
+            <img src="src/images/#" alt="Argentinian food">
+            <section>
+                <header>
+                    <div class="tags">
+                        <span><a href="#">Argentinian food</a></span>
+                        <span><a href="#">Meat</a></span>
+                    </div>
+                    <h2>Argentinian food</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet sed dolorem minus. Molestiae, harum.</p>
+                <footer>
+                    <div class="author-section">
+                        <img src="src/images/#" alt="Author's avatar">
+                        <span class="author">Sebastián Prieto</span>
+                    </div>
+                    <span class="reading-time">
+                        7 minutes
+                    </span>
+                </footer>
+            </section>
+        </article>
         <article></article>
         <article></article>
         <article></article>
@@ -53,5 +79,9 @@
        </section>
        <section>Learn to cook!</section>
     </main>
+    <footer>
+        Footer
+    </footer>
+    <script src="https://kit.fontawesome.com/100640a0cd.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,3 +4,71 @@
 @use "components/paragraph.scss";
 @use "components/avatar.scss";
 @use "components/picture.scss";
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--color-nav-items-heliotrope);
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+.active-element {
+    font-weight: 700;
+}
+
+.btn-discord {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--color-bg-discordBtn-blue);
+    color: var(--color-fnt-discordBtn-white);
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-github {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--color-bg-githubBtn-bunker);
+    color: var(--color-fnt-githubBtn-white);
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+i:hover {
+    transition: 0.5s;
+    opacity: 0.6;
+}
+
+
+
+.nav-list li button i {
+    font-size: 1rem;
+}
+
+// Cómo llamar al último hijo de un ul
+
+
+.nav-list li:last-child button i {
+    font-size: 1.6rem;
+}
