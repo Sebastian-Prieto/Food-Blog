@@ -72,3 +72,38 @@ i:hover {
 .nav-list li:last-child button i {
     font-size: 1.6rem;
 }
+
+.post-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 560px 430px 560px;
+    gap: 4rem 2rem;
+}
+
+.post-list-card:nth-child(4n) {
+    grid-column: 1 / 4;
+}
+
+.post-list-card {
+    background: tomato;
+}
+
+
+
+.nav-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.nav-filter-items {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
