@@ -5,6 +5,8 @@
 @use "components/avatar.scss";
 @use "components/picture.scss";
 
+// ----------------------------------------------- Nav -----------------------------------------------
+
 
 .nav-list {
     display: flex;
@@ -19,7 +21,7 @@
 
 .nav-list li a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--color-nav-items-heliotrope);
 }
 
@@ -60,18 +62,17 @@ i:hover {
     opacity: 0.6;
 }
 
-
-
 .nav-list li button i {
     font-size: 1rem;
 }
 
 // Cómo llamar al último hijo de un ul
 
-
 .nav-list li:last-child button i {
     font-size: 1.6rem;
 }
+
+// ------------------------------------------ Post ------------------------------------------
 
 .post-list-container {
     display: flex;
@@ -82,19 +83,27 @@ i:hover {
 .post-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 560px 430px 560px;
+    grid-auto-rows: 560px 430px;
     gap: 4rem 2rem;
 }
 
+
+
 .post-list-card:nth-child(4n) {
     grid-column: 1 / 4;
+    background: var(--color-bg-fourth-card-mauve);
 }
+
+.post-list-card:nth-child(4n) img {
+    width: 660px;
+    height: 340px;
+}
+
+
 
 .post-list-card {
-    background: tomato;
+    background: var(--color-bg-card-white);
 }
-
-
 
 .nav-filter {
     display: flex;
@@ -104,6 +113,24 @@ i:hover {
 
 .nav-filter-items {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 3rem;
     justify-content: space-evenly;
+}
+
+.nav-filter-items a {
+    text-decoration-style: underline;
+    color: var(--color-bg-discordBtn-blue);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.nav-filter input {
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    background: var(--color-bg-card-white);
+    color: var(--color-fnt-paragraph-card-fiord);
+    font-weight: 400;
 }

@@ -1,0 +1,53 @@
+.post-list-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem 0;
+    padding: 1rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.post-list-card header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem 0;
+}
+
+.post-list-card header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-fnt-title-card-black);
+}
+
+.post-list-card p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--color-fnt-paragraph-card-fiord);
+}
+
+.post-list-card footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--color-fnt-author-card-black);
+}
+
+.reading-time {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-fnt-readingTime-card-baliHai);
+}

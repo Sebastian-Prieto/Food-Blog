@@ -16,7 +16,8 @@ body {
     @include container-width;
 }
 
-header {
+.main-header {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,10 +34,40 @@ header {
     margin-right: 1rem;
 }
 
-.logo-section h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--color-ftd-card-heliotrope);
+.logo-section .f {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #4385F5;
+}
+
+.logo-section .o {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #EB4235;
+}
+
+.logo-section .oo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #F9BC04;
+}
+
+.logo-section .g {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #4385F5;
+}
+
+.logo-section .l {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #34A853;
+}
+
+.logo-section .e {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #EB4235;
 }
 
 main {
