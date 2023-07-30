@@ -4,6 +4,7 @@
 @use "components/paragraph.scss";
 @use "components/avatar.scss";
 @use "components/picture.scss";
+@use "elements.scss";
 
 // ----------------------------------------------- Nav -----------------------------------------------
 
@@ -78,28 +79,35 @@ i:hover {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 0 1.5rem;
+    @include elements.desktop {
+        padding: 0;
+    }
 }
 
 .post-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 560px 430px;
-    gap: 4rem 2rem;
+    gap: 2rem;
+    @include elements.desktop {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(560px, auto) minmax(430px, auto);
+        
+    }
 }
 
 
 
 .post-list-card:nth-child(4n) {
-    grid-column: 1 / 4;
     background: var(--color-bg-fourth-card-mauve);
+    @include elements.desktop {
+        grid-column: 1 / 4;
+    }
 }
 
 .post-list-card:nth-child(4n) img {
     width: 660px;
     height: 340px;
 }
-
-
 
 .post-list-card {
     background: var(--color-bg-card-white);
@@ -109,13 +117,22 @@ i:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    gap: 2rem;
+
+    @include elements.desktop {
+        flex-wrap: wrap;
+    }
 }
 
 .nav-filter-items {
     display: flex;
     align-items: center;
     gap: 3rem;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
 .nav-filter-items a {
@@ -133,4 +150,9 @@ i:hover {
     background: var(--color-bg-card-white);
     color: var(--color-fnt-paragraph-card-fiord);
     font-weight: 400;
+    width: 100%;
+
+    @include elements.desktop {
+        max-width: 290px;
+    }
 }

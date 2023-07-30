@@ -1,3 +1,4 @@
+@use "variables.scss";
 @mixin container-width {
     width: 100%;
     max-width: var(--container-max-width);
@@ -11,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     background: var(--color-bg-mysticWhite);
     margin: 0 auto;
     @include container-width;
@@ -27,7 +29,7 @@ body {
 .logo-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .logo-section img {
@@ -75,3 +77,12 @@ main {
     flex-direction: column;
     @include container-width;
 }
+
+// ---------------------------------------------- Responsive ----------------------------------
+
+@mixin desktop {
+    @media screen and (min-width: variables.$breakpoint-large) {
+        @content;
+    }
+}
+
