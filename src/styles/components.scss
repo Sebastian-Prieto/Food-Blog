@@ -97,14 +97,38 @@ i:hover {
 
 
 
-.post-list-card:nth-child(4n) {
-    background: var(--color-bg-fourth-card-mauve);
+
     @include elements.desktop {
-        grid-column: 1 / 4;
+        .post-list-card-extended,
+        .post-list-card:nth-child(4n) {
+            background: var(--color-bg-fourth-card-mauve);
+            flex-direction: row;
+            grid-column: 1 / 4;
+            padding: 3rem;
+            gap: 3rem;
+
+            & > img {
+                max-width: 660px;
+                max-height: 340px;
+            }
+
+            .tag {
+                background: white;
+            }
+
+            a {
+                color: var(--color-nav-items-heliotrope);
+            }
+    }
+
+    .post-list-card-extended:nth-child(8n) {
+        flex-direction: row-reverse;
     }
 }
 
-.post-list-card:nth-child(4n) img {
+
+
+.post-list-card:nth-child(4n) header img {
     width: 660px;
     height: 340px;
 }
